@@ -6,6 +6,13 @@ public class Main {
         System.out.println("Hello Java");
         houseExample();
         boatExample();
+        basicStatements();
+    }
+    public static void basicStatements() {
+        System.out.println("This is my first sentence.");
+        System.out.println("I am new to Java.");
+        System.out.println("This Java Course is cool.");
+        System.out.println("I am learning stuff everyday.");
     }
 
     // Single comment
