@@ -108,7 +108,7 @@ public class Lesson4 {
         Lesson4 myLesson4 = new Lesson4();
         String msg = "All about Strings";
         //System.out.println(myLesson4.joinWelcome(msg));
-        //myLesson4.checkWelcome(msg);
+        myLesson4.checkWelcome(msg);
         //myLesson4.indexNote(5);
         //myLesson4.anotherJoin(" is not quite finished.");
         //myLesson4.areWeAlike("Happy", "Happy");
@@ -118,7 +118,7 @@ public class Lesson4 {
         //System.out.println(response);
         //System.out.println(myLesson4.favoriteThings("Dark Red","Pizza"));
         //myLesson4.iAmSingle();
-        System.out.println(myLesson4.escapeMe());
+        //System.out.println(myLesson4.escapeMe());
 
     }
 
