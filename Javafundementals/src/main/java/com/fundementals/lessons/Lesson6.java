@@ -101,19 +101,54 @@ int sum1 = 23, sum2 = 45;
         System.out.println("Logical Operator or (||) " + answer);
     }
 
+    /* Increment Operator */
+    public void makeIncrease() {
+        int able = 10, num1, num2;
+
+        /* Post Increment - Value is computed then incremented */
+        num1 = able++; // post increment
+        System.out.println(able); // 11
+        System.out.println(num1); // 10
+
+        /* Pre increment - Value is incremented then computed */
+        num2 = ++able;
+        System.out.println(able); //12
+        System.out.println(num2); //12
+    }
+
+    /* Decrement Operator*/
+    public void makeMeDecrease() {
+        int beta = 10, value1, value2;
+
+        /* Post Decrement - Value is computed then Decremented*/
+        value1 = beta--;
+        System.out.println(value1); //10
+        System.out.println(beta); //9
+
+        /* Pre Decrement - Value is decremented, then computed*/
+        value2 = --beta;
+        System.out.println(value2); //8
+        System.out.println(beta); //8
+
+    }
+
+
     public static void main(String[] args){
         Lesson6 myLesson = new Lesson6();
         //myLesson.basicMath();
         //myLesson.justTheRemainder(7);
         //double total = myLesson.mathOrder();
         //System.out.println(total);
-        myLesson.addSomeNumbers();
+        //myLesson.addSomeNumbers();
         //myLesson.demoAssignment(20, 6);
         //myLesson.demoRelationalEquals(225,58);
         //myLesson.demoRelationalGreater(17,38);
         //myLesson.compareEquals();
+        //myLesson.demoLogicalAnd(5, 10, 15);
+        //myLesson.demoLogicalOr(5,10,15);
+        //myLesson.makeIncrease();
+        myLesson.makeMeDecrease();
 
     }
 
 } //end class
-
