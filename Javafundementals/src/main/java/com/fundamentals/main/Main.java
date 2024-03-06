@@ -24,11 +24,11 @@ public class Main {
     public static void houseExample() {
         House myHouse = new House();
         myHouse.doorFunction();
-        myHouse.entranceDoorColor = "Red";
-        myHouse.foundationType = "Concrete";
-        myHouse.roofStyle = "Cedar Shingles";
-        myHouse.totalWindows = 30;
-        System.out.println(myHouse.entranceDoorColor);
+        //myHouse.entranceDoorColor = "Red";
+        //myHouse.foundationType = "Concrete";
+        //myHouse.roofStyle = "Cedar Shingles";
+        //myHouse.totalWindows = 30;
+        //System.out.println(myHouse.entranceDoorColor);
     }
 
 
