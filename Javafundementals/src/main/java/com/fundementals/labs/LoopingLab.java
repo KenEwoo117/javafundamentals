@@ -40,8 +40,8 @@ public class LoopingLab {
 
     public static void main(String[] args){
         LoopingLab myLoopingLab = new LoopingLab();
-        //myLoopingLab.loopDeLoop();
-        myLoopingLab.divisibleByThree();
+        myLoopingLab.loopDeLoop();
+        //myLoopingLab.divisibleByThree();
 
 
     }

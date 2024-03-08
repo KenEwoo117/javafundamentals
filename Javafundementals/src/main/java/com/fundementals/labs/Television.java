@@ -6,6 +6,10 @@ public class Television {
     private int numPorts;
     private boolean isItMountable;
 
+    public Television(){
+
+    }
+
     public Television(double screenSize, int numPorts){
         this(screenSize,799.99,5,true);
     }
@@ -25,12 +29,12 @@ public class Television {
         return screenSize;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public void setNumPorts(int numPorts) {
@@ -49,13 +53,25 @@ public class Television {
         return isItMountable;
     }
 
+    public void setScreenSize(double screenSize,double newScreenSize) {
+        this.screenSize = newScreenSize;
+        System.out.println("Screen changed from " + screenSize + " inches to " + newScreenSize + " inches.");
+    }
+
     public void turnOn() {
         System.out.println("The " + screenSize + "in" + " Tv is on.");
     }
 
+    public void showPrice() {
+        System.out.println("The TV price is  " + price);
+    }
+
     public static void main(String[] args) {
         Television myTelevision = new Television(70.0,799.99,5,true);
-        myTelevision.turnOn();
+        //myTelevision.turnOn();
+        //myTelevision.setScreenSize(70.0,80.0);
+        myTelevision.showPrice();
+
 
     }
 
