@@ -6,9 +6,6 @@ public class Television {
     private int numPorts;
     private boolean isItMountable;
 
-    public Television(){
-
-    }
 
     public Television(double screenSize, int numPorts){
         this(screenSize,799.99,5,true);
@@ -66,13 +63,16 @@ public class Television {
         System.out.println("The TV price is  " + price);
     }
 
+    public void willItMount() {
+        System.out.println(isItMountable);
+    }
+
     public static void main(String[] args) {
         Television myTelevision = new Television(70.0,799.99,5,true);
         //myTelevision.turnOn();
         //myTelevision.setScreenSize(70.0,80.0);
-        myTelevision.showPrice();
-
-
+        //myTelevision.showPrice();
+        //myTelevision.willItMount();
     }
 
 

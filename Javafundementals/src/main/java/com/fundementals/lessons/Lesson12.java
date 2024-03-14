@@ -5,7 +5,6 @@ import java.sql.SQLOutput;
 /* Lesson 12  Constructors and Encapsulation */
 public class Lesson12 {
 
-
     private String firstName, lastName;
 
     // default constructor

@@ -1,10 +1,14 @@
 package com.fundamentals.main.practice;
 
 public class Boat {
-private String hullColor;
-private String hullType;
-private String boatSize;
-private int totalSeats;
+protected String hullColor;
+protected String hullType;
+protected String boatSize;
+protected int totalSeats;
+
+    public Boat() {
+
+    }
 
     public Boat(String hullColor){
         this(hullColor,"aluminum","small",6);
@@ -51,10 +55,20 @@ private int totalSeats;
         return totalSeats;
     }
 
+    public void boatFunction() {
+        System.out.println("This Boat Floats");
+    }
+
+    public void boatFunction(String hullColor){
+        System.out.println("This " + hullColor + " boat floats.");
+    }
+
+
     public static void main(String[] args){
         Boat myBoat = new Boat("Black", "Aluminum","Small",8);
-        System.out.println(myBoat.getHullColor());
-        System.out.println(myBoat.totalSeats);
+        //System.out.println(myBoat.getHullColor());
+        //System.out.println(myBoat.totalSeats);
+        myBoat.boatFunction(myBoat.hullColor);
 
     }
 
