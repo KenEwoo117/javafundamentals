@@ -38,7 +38,6 @@ public class EnumExercise {
                 break;
         }
     }
-
     public static void main(String[] args) {
         EnumExercise myMovies = new EnumExercise();
         myMovies.favoriteGenre(MoviesEnum.SCI_Fi);
